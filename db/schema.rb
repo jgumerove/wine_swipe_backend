@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_15_213138) do
+ActiveRecord::Schema.define(version: 2021_09_20_194701) do
 
   create_table "users", force: :cascade do |t|
     t.string "username"
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 2021_09_15_213138) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "image"
     t.integer "user_id", null: false
+    t.integer "price"
     t.index ["user_id"], name: "index_wines_on_user_id"
   end
 
